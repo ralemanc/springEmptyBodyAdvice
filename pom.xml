@@ -8,7 +8,7 @@
     <version>0.1</version>
     <properties>
         <java.version>1.8</java.version>
-        <spring-webmvc.version>4.3.7.RELEASE</spring-webmvc.version>
+        <spring-webmvc.version>4.3.8.BUILD-SNAPSHOT</spring-webmvc.version>
         <javax-servlet.version>3.0.1</javax-servlet.version>
 
         <spring-test.version>4.3.7.RELEASE</spring-test.version>
@@ -42,6 +42,17 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+
+    <repositories>
+        <repository>
+            <id>spring-snapshots</id>
+            <name>Spring Snapshots</name>
+            <url>https://repo.spring.io/libs-snapshot</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
 
     <build>
         <plugins>
